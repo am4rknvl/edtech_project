@@ -1578,7 +1578,7 @@ var parsedSchema = gqlparser.MustLoadSchema(sources...)
 func (ec *executionContext) dir_auth_args(ctx context.Context, rawArgs map[string]any) (map[string]any, error) {
 	var err error
 	args := map[string]any{}
-	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "roles", ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ)
+	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "roles", ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ)
 	if err != nil {
 		return nil, err
 	}
@@ -1594,7 +1594,7 @@ func (ec *executionContext) field_Mutation_addAudioBlock_args(ctx context.Contex
 		return nil, err
 	}
 	args["lessonId"] = arg0
-	arg1, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNAudioBlockInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAudioBlockInput)
+	arg1, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNAudioBlockInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAudioBlockInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1610,7 +1610,7 @@ func (ec *executionContext) field_Mutation_addImageBlock_args(ctx context.Contex
 		return nil, err
 	}
 	args["lessonId"] = arg0
-	arg1, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNImageBlockInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐImageBlockInput)
+	arg1, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNImageBlockInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐImageBlockInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1626,7 +1626,7 @@ func (ec *executionContext) field_Mutation_addTextBlock_args(ctx context.Context
 		return nil, err
 	}
 	args["lessonId"] = arg0
-	arg1, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNTextBlockInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐTextBlockInput)
+	arg1, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNTextBlockInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐTextBlockInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1642,7 +1642,7 @@ func (ec *executionContext) field_Mutation_addVideoBlock_args(ctx context.Contex
 		return nil, err
 	}
 	args["lessonId"] = arg0
-	arg1, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNVideoBlockInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐVideoBlockInput)
+	arg1, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNVideoBlockInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐVideoBlockInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1680,7 +1680,7 @@ func (ec *executionContext) field_Mutation_completeLesson_args(ctx context.Conte
 func (ec *executionContext) field_Mutation_createCourse_args(ctx context.Context, rawArgs map[string]any) (map[string]any, error) {
 	var err error
 	args := map[string]any{}
-	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNCreateCourseInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCreateCourseInput)
+	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNCreateCourseInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCreateCourseInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1691,7 +1691,7 @@ func (ec *executionContext) field_Mutation_createCourse_args(ctx context.Context
 func (ec *executionContext) field_Mutation_createLesson_args(ctx context.Context, rawArgs map[string]any) (map[string]any, error) {
 	var err error
 	args := map[string]any{}
-	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNCreateLessonInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCreateLessonInput)
+	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNCreateLessonInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCreateLessonInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1707,7 +1707,7 @@ func (ec *executionContext) field_Mutation_createQuiz_args(ctx context.Context, 
 		return nil, err
 	}
 	args["lessonId"] = arg0
-	arg1, err := graphql.ProcessArgField(ctx, rawArgs, "questions", ec.unmarshalNQuestionInput2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuestionInputᚄ)
+	arg1, err := graphql.ProcessArgField(ctx, rawArgs, "questions", ec.unmarshalNQuestionInput2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuestionInputᚄ)
 	if err != nil {
 		return nil, err
 	}
@@ -1718,7 +1718,7 @@ func (ec *executionContext) field_Mutation_createQuiz_args(ctx context.Context, 
 func (ec *executionContext) field_Mutation_createStudentProfile_args(ctx context.Context, rawArgs map[string]any) (map[string]any, error) {
 	var err error
 	args := map[string]any{}
-	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNCreateStudentProfileInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCreateStudentProfileInput)
+	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNCreateStudentProfileInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCreateStudentProfileInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1729,7 +1729,7 @@ func (ec *executionContext) field_Mutation_createStudentProfile_args(ctx context
 func (ec *executionContext) field_Mutation_createUnit_args(ctx context.Context, rawArgs map[string]any) (map[string]any, error) {
 	var err error
 	args := map[string]any{}
-	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNCreateUnitInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCreateUnitInput)
+	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNCreateUnitInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCreateUnitInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1740,7 +1740,7 @@ func (ec *executionContext) field_Mutation_createUnit_args(ctx context.Context, 
 func (ec *executionContext) field_Mutation_createUploadUrl_args(ctx context.Context, rawArgs map[string]any) (map[string]any, error) {
 	var err error
 	args := map[string]any{}
-	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNCreateUploadUrlInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCreateUploadURLInput)
+	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNCreateUploadUrlInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCreateUploadURLInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1751,7 +1751,7 @@ func (ec *executionContext) field_Mutation_createUploadUrl_args(ctx context.Cont
 func (ec *executionContext) field_Mutation_linkChild_args(ctx context.Context, rawArgs map[string]any) (map[string]any, error) {
 	var err error
 	args := map[string]any{}
-	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNLinkChildInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLinkChildInput)
+	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNLinkChildInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLinkChildInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1773,7 +1773,7 @@ func (ec *executionContext) field_Mutation_publishLesson_args(ctx context.Contex
 func (ec *executionContext) field_Mutation_signIn_args(ctx context.Context, rawArgs map[string]any) (map[string]any, error) {
 	var err error
 	args := map[string]any{}
-	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNSignInInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSignInInput)
+	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNSignInInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSignInInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1784,7 +1784,7 @@ func (ec *executionContext) field_Mutation_signIn_args(ctx context.Context, rawA
 func (ec *executionContext) field_Mutation_signUp_args(ctx context.Context, rawArgs map[string]any) (map[string]any, error) {
 	var err error
 	args := map[string]any{}
-	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNSignUpInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSignUpInput)
+	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNSignUpInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSignUpInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1817,7 +1817,7 @@ func (ec *executionContext) field_Mutation_submitForReview_args(ctx context.Cont
 func (ec *executionContext) field_Mutation_submitQuiz_args(ctx context.Context, rawArgs map[string]any) (map[string]any, error) {
 	var err error
 	args := map[string]any{}
-	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNSubmitQuizInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubmitQuizInput)
+	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "input", ec.unmarshalNSubmitQuizInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubmitQuizInput)
 	if err != nil {
 		return nil, err
 	}
@@ -1871,7 +1871,7 @@ func (ec *executionContext) field_Query_courses_args(ctx context.Context, rawArg
 		return nil, err
 	}
 	args["subjectId"] = arg1
-	arg2, err := graphql.ProcessArgField(ctx, rawArgs, "state", ec.unmarshalOPublishState2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐPublishState)
+	arg2, err := graphql.ProcessArgField(ctx, rawArgs, "state", ec.unmarshalOPublishState2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐPublishState)
 	if err != nil {
 		return nil, err
 	}
@@ -1898,7 +1898,7 @@ func (ec *executionContext) field_Query_lessons_args(ctx context.Context, rawArg
 		return nil, err
 	}
 	args["unitId"] = arg0
-	arg1, err := graphql.ProcessArgField(ctx, rawArgs, "state", ec.unmarshalOPublishState2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐPublishState)
+	arg1, err := graphql.ProcessArgField(ctx, rawArgs, "state", ec.unmarshalOPublishState2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐPublishState)
 	if err != nil {
 		return nil, err
 	}
@@ -1963,7 +1963,7 @@ func (ec *executionContext) field_Query_searchLessons_args(ctx context.Context, 
 func (ec *executionContext) field_Query_submissions_args(ctx context.Context, rawArgs map[string]any) (map[string]any, error) {
 	var err error
 	args := map[string]any{}
-	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "state", ec.unmarshalOPublishState2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐPublishState)
+	arg0, err := graphql.ProcessArgField(ctx, rawArgs, "state", ec.unmarshalOPublishState2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐPublishState)
 	if err != nil {
 		return nil, err
 	}
@@ -2128,7 +2128,7 @@ func (ec *executionContext) _Attempt_user(ctx context.Context, field graphql.Col
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Attempt_user(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2186,7 +2186,7 @@ func (ec *executionContext) _Attempt_quiz(ctx context.Context, field graphql.Col
 	}
 	res := resTmp.(*model.Quiz)
 	fc.Result = res
-	return ec.marshalNQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuiz(ctx, field.Selections, res)
+	return ec.marshalNQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuiz(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Attempt_quiz(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2367,7 +2367,7 @@ func (ec *executionContext) _Attempt_answers(ctx context.Context, field graphql.
 	}
 	res := resTmp.([]*model.AttemptAnswer)
 	fc.Result = res
-	return ec.marshalNAttemptAnswer2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAttemptAnswerᚄ(ctx, field.Selections, res)
+	return ec.marshalNAttemptAnswer2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAttemptAnswerᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Attempt_answers(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2465,7 +2465,7 @@ func (ec *executionContext) _AttemptAnswer_question(ctx context.Context, field g
 	}
 	res := resTmp.(*model.Question)
 	fc.Result = res
-	return ec.marshalNQuestion2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuestion(ctx, field.Selections, res)
+	return ec.marshalNQuestion2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuestion(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_AttemptAnswer_question(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2818,7 +2818,7 @@ func (ec *executionContext) _AuthPayload_user(ctx context.Context, field graphql
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_AuthPayload_user(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2920,7 +2920,7 @@ func (ec *executionContext) _Course_subject(ctx context.Context, field graphql.C
 	}
 	res := resTmp.(*model.Subject)
 	fc.Result = res
-	return ec.marshalNSubject2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubject(ctx, field.Selections, res)
+	return ec.marshalNSubject2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubject(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Course_subject(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3058,7 +3058,7 @@ func (ec *executionContext) _Course_state(ctx context.Context, field graphql.Col
 	}
 	res := resTmp.(model.PublishState)
 	fc.Result = res
-	return ec.marshalNPublishState2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐPublishState(ctx, field.Selections, res)
+	return ec.marshalNPublishState2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐPublishState(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Course_state(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3363,7 +3363,7 @@ func (ec *executionContext) _Lesson_unit(ctx context.Context, field graphql.Coll
 	}
 	res := resTmp.(*model.Unit)
 	fc.Result = res
-	return ec.marshalNUnit2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUnit(ctx, field.Selections, res)
+	return ec.marshalNUnit2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUnit(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Lesson_unit(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3502,7 +3502,7 @@ func (ec *executionContext) _Lesson_difficulty(ctx context.Context, field graphq
 	}
 	res := resTmp.(*model.Difficulty)
 	fc.Result = res
-	return ec.marshalODifficulty2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐDifficulty(ctx, field.Selections, res)
+	return ec.marshalODifficulty2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐDifficulty(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Lesson_difficulty(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3546,7 +3546,7 @@ func (ec *executionContext) _Lesson_state(ctx context.Context, field graphql.Col
 	}
 	res := resTmp.(model.PublishState)
 	fc.Result = res
-	return ec.marshalNPublishState2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐPublishState(ctx, field.Selections, res)
+	return ec.marshalNPublishState2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐPublishState(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Lesson_state(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3634,7 +3634,7 @@ func (ec *executionContext) _Lesson_content(ctx context.Context, field graphql.C
 	}
 	res := resTmp.([]model.ContentBlock)
 	fc.Result = res
-	return ec.marshalNContentBlock2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐContentBlockᚄ(ctx, field.Selections, res)
+	return ec.marshalNContentBlock2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐContentBlockᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Lesson_content(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3675,7 +3675,7 @@ func (ec *executionContext) _Lesson_quiz(ctx context.Context, field graphql.Coll
 	}
 	res := resTmp.(*model.Quiz)
 	fc.Result = res
-	return ec.marshalOQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuiz(ctx, field.Selections, res)
+	return ec.marshalOQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuiz(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Lesson_quiz(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3771,7 +3771,7 @@ func (ec *executionContext) _Mutation_signUp(ctx context.Context, field graphql.
 	}
 	res := resTmp.(*model.AuthPayload)
 	fc.Result = res
-	return ec.marshalNAuthPayload2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAuthPayload(ctx, field.Selections, res)
+	return ec.marshalNAuthPayload2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAuthPayload(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_signUp(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3832,7 +3832,7 @@ func (ec *executionContext) _Mutation_signIn(ctx context.Context, field graphql.
 	}
 	res := resTmp.(*model.AuthPayload)
 	fc.Result = res
-	return ec.marshalNAuthPayload2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAuthPayload(ctx, field.Selections, res)
+	return ec.marshalNAuthPayload2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAuthPayload(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_signIn(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3884,7 +3884,7 @@ func (ec *executionContext) _Mutation_createStudentProfile(ctx context.Context, 
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"STUDENT"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"STUDENT"})
 			if err != nil {
 				var zeroVal *model.StudentProfile
 				return zeroVal, err
@@ -3906,7 +3906,7 @@ func (ec *executionContext) _Mutation_createStudentProfile(ctx context.Context, 
 		if data, ok := tmp.(*model.StudentProfile); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.StudentProfile`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.StudentProfile`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -3920,7 +3920,7 @@ func (ec *executionContext) _Mutation_createStudentProfile(ctx context.Context, 
 	}
 	res := resTmp.(*model.StudentProfile)
 	fc.Result = res
-	return ec.marshalNStudentProfile2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐStudentProfile(ctx, field.Selections, res)
+	return ec.marshalNStudentProfile2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐStudentProfile(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_createStudentProfile(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -3980,7 +3980,7 @@ func (ec *executionContext) _Mutation_linkChild(ctx context.Context, field graph
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"PARENT"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"PARENT"})
 			if err != nil {
 				var zeroVal *model.ParentChild
 				return zeroVal, err
@@ -4002,7 +4002,7 @@ func (ec *executionContext) _Mutation_linkChild(ctx context.Context, field graph
 		if data, ok := tmp.(*model.ParentChild); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.ParentChild`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.ParentChild`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -4016,7 +4016,7 @@ func (ec *executionContext) _Mutation_linkChild(ctx context.Context, field graph
 	}
 	res := resTmp.(*model.ParentChild)
 	fc.Result = res
-	return ec.marshalNParentChild2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐParentChild(ctx, field.Selections, res)
+	return ec.marshalNParentChild2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐParentChild(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_linkChild(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4072,7 +4072,7 @@ func (ec *executionContext) _Mutation_createCourse(ctx context.Context, field gr
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
 			if err != nil {
 				var zeroVal *model.Course
 				return zeroVal, err
@@ -4094,7 +4094,7 @@ func (ec *executionContext) _Mutation_createCourse(ctx context.Context, field gr
 		if data, ok := tmp.(*model.Course); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.Course`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.Course`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -4108,7 +4108,7 @@ func (ec *executionContext) _Mutation_createCourse(ctx context.Context, field gr
 	}
 	res := resTmp.(*model.Course)
 	fc.Result = res
-	return ec.marshalNCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCourse(ctx, field.Selections, res)
+	return ec.marshalNCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCourse(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_createCourse(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4168,7 +4168,7 @@ func (ec *executionContext) _Mutation_createUnit(ctx context.Context, field grap
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
 			if err != nil {
 				var zeroVal *model.Unit
 				return zeroVal, err
@@ -4190,7 +4190,7 @@ func (ec *executionContext) _Mutation_createUnit(ctx context.Context, field grap
 		if data, ok := tmp.(*model.Unit); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.Unit`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.Unit`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -4204,7 +4204,7 @@ func (ec *executionContext) _Mutation_createUnit(ctx context.Context, field grap
 	}
 	res := resTmp.(*model.Unit)
 	fc.Result = res
-	return ec.marshalNUnit2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUnit(ctx, field.Selections, res)
+	return ec.marshalNUnit2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUnit(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_createUnit(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4260,7 +4260,7 @@ func (ec *executionContext) _Mutation_createLesson(ctx context.Context, field gr
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
 			if err != nil {
 				var zeroVal *model.Lesson
 				return zeroVal, err
@@ -4282,7 +4282,7 @@ func (ec *executionContext) _Mutation_createLesson(ctx context.Context, field gr
 		if data, ok := tmp.(*model.Lesson); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.Lesson`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.Lesson`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -4296,7 +4296,7 @@ func (ec *executionContext) _Mutation_createLesson(ctx context.Context, field gr
 	}
 	res := resTmp.(*model.Lesson)
 	fc.Result = res
-	return ec.marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLesson(ctx, field.Selections, res)
+	return ec.marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLesson(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_createLesson(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4364,7 +4364,7 @@ func (ec *executionContext) _Mutation_addTextBlock(ctx context.Context, field gr
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
 			if err != nil {
 				var zeroVal *model.TextBlock
 				return zeroVal, err
@@ -4386,7 +4386,7 @@ func (ec *executionContext) _Mutation_addTextBlock(ctx context.Context, field gr
 		if data, ok := tmp.(*model.TextBlock); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.TextBlock`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.TextBlock`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -4400,7 +4400,7 @@ func (ec *executionContext) _Mutation_addTextBlock(ctx context.Context, field gr
 	}
 	res := resTmp.(*model.TextBlock)
 	fc.Result = res
-	return ec.marshalNTextBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐTextBlock(ctx, field.Selections, res)
+	return ec.marshalNTextBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐTextBlock(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_addTextBlock(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4454,7 +4454,7 @@ func (ec *executionContext) _Mutation_addImageBlock(ctx context.Context, field g
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
 			if err != nil {
 				var zeroVal *model.ImageBlock
 				return zeroVal, err
@@ -4476,7 +4476,7 @@ func (ec *executionContext) _Mutation_addImageBlock(ctx context.Context, field g
 		if data, ok := tmp.(*model.ImageBlock); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.ImageBlock`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.ImageBlock`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -4490,7 +4490,7 @@ func (ec *executionContext) _Mutation_addImageBlock(ctx context.Context, field g
 	}
 	res := resTmp.(*model.ImageBlock)
 	fc.Result = res
-	return ec.marshalNImageBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐImageBlock(ctx, field.Selections, res)
+	return ec.marshalNImageBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐImageBlock(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_addImageBlock(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4546,7 +4546,7 @@ func (ec *executionContext) _Mutation_addAudioBlock(ctx context.Context, field g
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
 			if err != nil {
 				var zeroVal *model.AudioBlock
 				return zeroVal, err
@@ -4568,7 +4568,7 @@ func (ec *executionContext) _Mutation_addAudioBlock(ctx context.Context, field g
 		if data, ok := tmp.(*model.AudioBlock); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.AudioBlock`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.AudioBlock`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -4582,7 +4582,7 @@ func (ec *executionContext) _Mutation_addAudioBlock(ctx context.Context, field g
 	}
 	res := resTmp.(*model.AudioBlock)
 	fc.Result = res
-	return ec.marshalNAudioBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAudioBlock(ctx, field.Selections, res)
+	return ec.marshalNAudioBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAudioBlock(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_addAudioBlock(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4638,7 +4638,7 @@ func (ec *executionContext) _Mutation_addVideoBlock(ctx context.Context, field g
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
 			if err != nil {
 				var zeroVal *model.VideoBlock
 				return zeroVal, err
@@ -4660,7 +4660,7 @@ func (ec *executionContext) _Mutation_addVideoBlock(ctx context.Context, field g
 		if data, ok := tmp.(*model.VideoBlock); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.VideoBlock`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.VideoBlock`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -4674,7 +4674,7 @@ func (ec *executionContext) _Mutation_addVideoBlock(ctx context.Context, field g
 	}
 	res := resTmp.(*model.VideoBlock)
 	fc.Result = res
-	return ec.marshalNVideoBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐVideoBlock(ctx, field.Selections, res)
+	return ec.marshalNVideoBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐVideoBlock(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_addVideoBlock(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4730,7 +4730,7 @@ func (ec *executionContext) _Mutation_createQuiz(ctx context.Context, field grap
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
 			if err != nil {
 				var zeroVal *model.Quiz
 				return zeroVal, err
@@ -4752,7 +4752,7 @@ func (ec *executionContext) _Mutation_createQuiz(ctx context.Context, field grap
 		if data, ok := tmp.(*model.Quiz); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.Quiz`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.Quiz`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -4766,7 +4766,7 @@ func (ec *executionContext) _Mutation_createQuiz(ctx context.Context, field grap
 	}
 	res := resTmp.(*model.Quiz)
 	fc.Result = res
-	return ec.marshalNQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuiz(ctx, field.Selections, res)
+	return ec.marshalNQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuiz(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_createQuiz(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4820,7 +4820,7 @@ func (ec *executionContext) _Mutation_submitForReview(ctx context.Context, field
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
 			if err != nil {
 				var zeroVal *model.Submission
 				return zeroVal, err
@@ -4842,7 +4842,7 @@ func (ec *executionContext) _Mutation_submitForReview(ctx context.Context, field
 		if data, ok := tmp.(*model.Submission); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.Submission`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.Submission`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -4856,7 +4856,7 @@ func (ec *executionContext) _Mutation_submitForReview(ctx context.Context, field
 	}
 	res := resTmp.(*model.Submission)
 	fc.Result = res
-	return ec.marshalNSubmission2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubmission(ctx, field.Selections, res)
+	return ec.marshalNSubmission2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubmission(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_submitForReview(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4918,7 +4918,7 @@ func (ec *executionContext) _Mutation_approveSubmission(ctx context.Context, fie
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"ADMIN"})
 			if err != nil {
 				var zeroVal *model.Submission
 				return zeroVal, err
@@ -4940,7 +4940,7 @@ func (ec *executionContext) _Mutation_approveSubmission(ctx context.Context, fie
 		if data, ok := tmp.(*model.Submission); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.Submission`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.Submission`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -4954,7 +4954,7 @@ func (ec *executionContext) _Mutation_approveSubmission(ctx context.Context, fie
 	}
 	res := resTmp.(*model.Submission)
 	fc.Result = res
-	return ec.marshalNSubmission2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubmission(ctx, field.Selections, res)
+	return ec.marshalNSubmission2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubmission(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_approveSubmission(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -5016,7 +5016,7 @@ func (ec *executionContext) _Mutation_publishLesson(ctx context.Context, field g
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"ADMIN"})
 			if err != nil {
 				var zeroVal *model.Lesson
 				return zeroVal, err
@@ -5038,7 +5038,7 @@ func (ec *executionContext) _Mutation_publishLesson(ctx context.Context, field g
 		if data, ok := tmp.(*model.Lesson); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.Lesson`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.Lesson`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -5052,7 +5052,7 @@ func (ec *executionContext) _Mutation_publishLesson(ctx context.Context, field g
 	}
 	res := resTmp.(*model.Lesson)
 	fc.Result = res
-	return ec.marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLesson(ctx, field.Selections, res)
+	return ec.marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLesson(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_publishLesson(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -5120,7 +5120,7 @@ func (ec *executionContext) _Mutation_startLesson(ctx context.Context, field gra
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"STUDENT"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"STUDENT"})
 			if err != nil {
 				var zeroVal *model.Progress
 				return zeroVal, err
@@ -5142,7 +5142,7 @@ func (ec *executionContext) _Mutation_startLesson(ctx context.Context, field gra
 		if data, ok := tmp.(*model.Progress); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.Progress`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.Progress`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -5156,7 +5156,7 @@ func (ec *executionContext) _Mutation_startLesson(ctx context.Context, field gra
 	}
 	res := resTmp.(*model.Progress)
 	fc.Result = res
-	return ec.marshalNProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgress(ctx, field.Selections, res)
+	return ec.marshalNProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgress(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_startLesson(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -5216,7 +5216,7 @@ func (ec *executionContext) _Mutation_completeLesson(ctx context.Context, field 
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"STUDENT"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"STUDENT"})
 			if err != nil {
 				var zeroVal *model.Progress
 				return zeroVal, err
@@ -5238,7 +5238,7 @@ func (ec *executionContext) _Mutation_completeLesson(ctx context.Context, field 
 		if data, ok := tmp.(*model.Progress); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.Progress`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.Progress`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -5252,7 +5252,7 @@ func (ec *executionContext) _Mutation_completeLesson(ctx context.Context, field 
 	}
 	res := resTmp.(*model.Progress)
 	fc.Result = res
-	return ec.marshalNProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgress(ctx, field.Selections, res)
+	return ec.marshalNProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgress(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_completeLesson(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -5312,7 +5312,7 @@ func (ec *executionContext) _Mutation_submitQuiz(ctx context.Context, field grap
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"STUDENT"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"STUDENT"})
 			if err != nil {
 				var zeroVal *model.Attempt
 				return zeroVal, err
@@ -5334,7 +5334,7 @@ func (ec *executionContext) _Mutation_submitQuiz(ctx context.Context, field grap
 		if data, ok := tmp.(*model.Attempt); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.Attempt`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.Attempt`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -5348,7 +5348,7 @@ func (ec *executionContext) _Mutation_submitQuiz(ctx context.Context, field grap
 	}
 	res := resTmp.(*model.Attempt)
 	fc.Result = res
-	return ec.marshalNAttempt2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAttempt(ctx, field.Selections, res)
+	return ec.marshalNAttempt2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAttempt(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_submitQuiz(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -5410,7 +5410,7 @@ func (ec *executionContext) _Mutation_createUploadUrl(ctx context.Context, field
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
 			if err != nil {
 				var zeroVal string
 				return zeroVal, err
@@ -5677,7 +5677,7 @@ func (ec *executionContext) _ParentChild_parent(ctx context.Context, field graph
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_ParentChild_parent(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -5735,7 +5735,7 @@ func (ec *executionContext) _ParentChild_child(ctx context.Context, field graphq
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_ParentChild_child(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -5881,7 +5881,7 @@ func (ec *executionContext) _Progress_user(ctx context.Context, field graphql.Co
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Progress_user(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -5939,7 +5939,7 @@ func (ec *executionContext) _Progress_lesson(ctx context.Context, field graphql.
 	}
 	res := resTmp.(*model.Lesson)
 	fc.Result = res
-	return ec.marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLesson(ctx, field.Selections, res)
+	return ec.marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLesson(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Progress_lesson(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6005,7 +6005,7 @@ func (ec *executionContext) _Progress_status(ctx context.Context, field graphql.
 	}
 	res := resTmp.(model.ProgressStatus)
 	fc.Result = res
-	return ec.marshalNProgressStatus2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgressStatus(ctx, field.Selections, res)
+	return ec.marshalNProgressStatus2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgressStatus(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Progress_status(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6139,7 +6139,7 @@ func (ec *executionContext) _Query_viewer(ctx context.Context, field graphql.Col
 		if data, ok := tmp.(*model.User); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.User`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.User`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -6150,7 +6150,7 @@ func (ec *executionContext) _Query_viewer(ctx context.Context, field graphql.Col
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalOUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalOUser2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_viewer(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6208,7 +6208,7 @@ func (ec *executionContext) _Query_subjects(ctx context.Context, field graphql.C
 	}
 	res := resTmp.([]*model.Subject)
 	fc.Result = res
-	return ec.marshalNSubject2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubjectᚄ(ctx, field.Selections, res)
+	return ec.marshalNSubject2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubjectᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_subjects(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6258,7 +6258,7 @@ func (ec *executionContext) _Query_courses(ctx context.Context, field graphql.Co
 	}
 	res := resTmp.([]*model.Course)
 	fc.Result = res
-	return ec.marshalNCourse2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCourseᚄ(ctx, field.Selections, res)
+	return ec.marshalNCourse2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCourseᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_courses(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6324,7 +6324,7 @@ func (ec *executionContext) _Query_course(ctx context.Context, field graphql.Col
 	}
 	res := resTmp.(*model.Course)
 	fc.Result = res
-	return ec.marshalOCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCourse(ctx, field.Selections, res)
+	return ec.marshalOCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCourse(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_course(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6393,7 +6393,7 @@ func (ec *executionContext) _Query_units(ctx context.Context, field graphql.Coll
 	}
 	res := resTmp.([]*model.Unit)
 	fc.Result = res
-	return ec.marshalNUnit2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUnitᚄ(ctx, field.Selections, res)
+	return ec.marshalNUnit2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUnitᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_units(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6458,7 +6458,7 @@ func (ec *executionContext) _Query_lessons(ctx context.Context, field graphql.Co
 	}
 	res := resTmp.([]*model.Lesson)
 	fc.Result = res
-	return ec.marshalNLesson2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLessonᚄ(ctx, field.Selections, res)
+	return ec.marshalNLesson2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLessonᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_lessons(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6532,7 +6532,7 @@ func (ec *executionContext) _Query_lesson(ctx context.Context, field graphql.Col
 	}
 	res := resTmp.(*model.Lesson)
 	fc.Result = res
-	return ec.marshalOLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLesson(ctx, field.Selections, res)
+	return ec.marshalOLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLesson(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_lesson(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6609,7 +6609,7 @@ func (ec *executionContext) _Query_recommendedLessons(ctx context.Context, field
 	}
 	res := resTmp.([]*model.Lesson)
 	fc.Result = res
-	return ec.marshalNLesson2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLessonᚄ(ctx, field.Selections, res)
+	return ec.marshalNLesson2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLessonᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_recommendedLessons(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6686,7 +6686,7 @@ func (ec *executionContext) _Query_searchLessons(ctx context.Context, field grap
 	}
 	res := resTmp.([]*model.Lesson)
 	fc.Result = res
-	return ec.marshalNLesson2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLessonᚄ(ctx, field.Selections, res)
+	return ec.marshalNLesson2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLessonᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_searchLessons(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6754,7 +6754,7 @@ func (ec *executionContext) _Query_myProgress(ctx context.Context, field graphql
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"STUDENT"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"STUDENT"})
 			if err != nil {
 				var zeroVal []*model.Progress
 				return zeroVal, err
@@ -6776,7 +6776,7 @@ func (ec *executionContext) _Query_myProgress(ctx context.Context, field graphql
 		if data, ok := tmp.([]*model.Progress); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be []*github.com/am4rknvl/edtech/graph/model.Progress`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be []*github.com/am4rknvl/edtech_project/graph/model.Progress`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -6790,7 +6790,7 @@ func (ec *executionContext) _Query_myProgress(ctx context.Context, field graphql
 	}
 	res := resTmp.([]*model.Progress)
 	fc.Result = res
-	return ec.marshalNProgress2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgressᚄ(ctx, field.Selections, res)
+	return ec.marshalNProgress2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgressᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_myProgress(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6867,7 +6867,7 @@ func (ec *executionContext) _Query_progressByLesson(ctx context.Context, field g
 		if data, ok := tmp.(*model.Progress); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech/graph/model.Progress`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be *github.com/am4rknvl/edtech_project/graph/model.Progress`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -6878,7 +6878,7 @@ func (ec *executionContext) _Query_progressByLesson(ctx context.Context, field g
 	}
 	res := resTmp.(*model.Progress)
 	fc.Result = res
-	return ec.marshalOProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgress(ctx, field.Selections, res)
+	return ec.marshalOProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgress(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_progressByLesson(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -6938,7 +6938,7 @@ func (ec *executionContext) _Query_myDraftLessons(ctx context.Context, field gra
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"TEACHER", "ADMIN"})
 			if err != nil {
 				var zeroVal []*model.Lesson
 				return zeroVal, err
@@ -6960,7 +6960,7 @@ func (ec *executionContext) _Query_myDraftLessons(ctx context.Context, field gra
 		if data, ok := tmp.([]*model.Lesson); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be []*github.com/am4rknvl/edtech/graph/model.Lesson`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be []*github.com/am4rknvl/edtech_project/graph/model.Lesson`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -6974,7 +6974,7 @@ func (ec *executionContext) _Query_myDraftLessons(ctx context.Context, field gra
 	}
 	res := resTmp.([]*model.Lesson)
 	fc.Result = res
-	return ec.marshalNLesson2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLessonᚄ(ctx, field.Selections, res)
+	return ec.marshalNLesson2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLessonᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_myDraftLessons(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -7031,7 +7031,7 @@ func (ec *executionContext) _Query_submissions(ctx context.Context, field graphq
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"ADMIN", "TEACHER"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"ADMIN", "TEACHER"})
 			if err != nil {
 				var zeroVal []*model.Submission
 				return zeroVal, err
@@ -7053,7 +7053,7 @@ func (ec *executionContext) _Query_submissions(ctx context.Context, field graphq
 		if data, ok := tmp.([]*model.Submission); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be []*github.com/am4rknvl/edtech/graph/model.Submission`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be []*github.com/am4rknvl/edtech_project/graph/model.Submission`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -7067,7 +7067,7 @@ func (ec *executionContext) _Query_submissions(ctx context.Context, field graphq
 	}
 	res := resTmp.([]*model.Submission)
 	fc.Result = res
-	return ec.marshalNSubmission2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubmissionᚄ(ctx, field.Selections, res)
+	return ec.marshalNSubmission2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubmissionᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_submissions(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -7129,7 +7129,7 @@ func (ec *executionContext) _Query_childProgress(ctx context.Context, field grap
 		}
 
 		directive1 := func(ctx context.Context) (any, error) {
-			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"PARENT", "ADMIN"})
+			roles, err := ec.unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx, []any{"PARENT", "ADMIN"})
 			if err != nil {
 				var zeroVal []*model.Progress
 				return zeroVal, err
@@ -7151,7 +7151,7 @@ func (ec *executionContext) _Query_childProgress(ctx context.Context, field grap
 		if data, ok := tmp.([]*model.Progress); ok {
 			return data, nil
 		}
-		return nil, fmt.Errorf(`unexpected type %T from directive, should be []*github.com/am4rknvl/edtech/graph/model.Progress`, tmp)
+		return nil, fmt.Errorf(`unexpected type %T from directive, should be []*github.com/am4rknvl/edtech_project/graph/model.Progress`, tmp)
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -7165,7 +7165,7 @@ func (ec *executionContext) _Query_childProgress(ctx context.Context, field grap
 	}
 	res := resTmp.([]*model.Progress)
 	fc.Result = res
-	return ec.marshalNProgress2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgressᚄ(ctx, field.Selections, res)
+	return ec.marshalNProgress2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgressᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_childProgress(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -7494,7 +7494,7 @@ func (ec *executionContext) _Question_options(ctx context.Context, field graphql
 	}
 	res := resTmp.([]*model.Option)
 	fc.Result = res
-	return ec.marshalOOption2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐOptionᚄ(ctx, field.Selections, res)
+	return ec.marshalOOption2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐOptionᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Question_options(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -7634,7 +7634,7 @@ func (ec *executionContext) _Quiz_questions(ctx context.Context, field graphql.C
 	}
 	res := resTmp.([]*model.Question)
 	fc.Result = res
-	return ec.marshalNQuestion2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuestionᚄ(ctx, field.Selections, res)
+	return ec.marshalNQuestion2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuestionᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Quiz_questions(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -7776,7 +7776,7 @@ func (ec *executionContext) _QuizBlock_quiz(ctx context.Context, field graphql.C
 	}
 	res := resTmp.(*model.Quiz)
 	fc.Result = res
-	return ec.marshalNQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuiz(ctx, field.Selections, res)
+	return ec.marshalNQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuiz(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_QuizBlock_quiz(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -7872,7 +7872,7 @@ func (ec *executionContext) _StudentProfile_user(ctx context.Context, field grap
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_StudentProfile_user(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -8232,7 +8232,7 @@ func (ec *executionContext) _Submission_lesson(ctx context.Context, field graphq
 	}
 	res := resTmp.(*model.Lesson)
 	fc.Result = res
-	return ec.marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLesson(ctx, field.Selections, res)
+	return ec.marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLesson(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Submission_lesson(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -8298,7 +8298,7 @@ func (ec *executionContext) _Submission_author(ctx context.Context, field graphq
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Submission_author(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -8353,7 +8353,7 @@ func (ec *executionContext) _Submission_reviewer(ctx context.Context, field grap
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalOUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalOUser2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Submission_reviewer(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -8452,7 +8452,7 @@ func (ec *executionContext) _Submission_state(ctx context.Context, field graphql
 	}
 	res := resTmp.(model.PublishState)
 	fc.Result = res
-	return ec.marshalNPublishState2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐPublishState(ctx, field.Selections, res)
+	return ec.marshalNPublishState2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐPublishState(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Submission_state(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -8548,7 +8548,7 @@ func (ec *executionContext) _Subscription_progressUpdated(ctx context.Context, f
 				w.Write([]byte{'{'})
 				graphql.MarshalString(field.Alias).MarshalGQL(w)
 				w.Write([]byte{':'})
-				ec.marshalNProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgress(ctx, field.Selections, res).MarshalGQL(w)
+				ec.marshalNProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgress(ctx, field.Selections, res).MarshalGQL(w)
 				w.Write([]byte{'}'})
 			})
 		case <-ctx.Done():
@@ -8631,7 +8631,7 @@ func (ec *executionContext) _Subscription_submissionStatusChanged(ctx context.Co
 				w.Write([]byte{'{'})
 				graphql.MarshalString(field.Alias).MarshalGQL(w)
 				w.Write([]byte{':'})
-				ec.marshalNSubmission2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubmission(ctx, field.Selections, res).MarshalGQL(w)
+				ec.marshalNSubmission2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubmission(ctx, field.Selections, res).MarshalGQL(w)
 				w.Write([]byte{'}'})
 			})
 		case <-ctx.Done():
@@ -8810,7 +8810,7 @@ func (ec *executionContext) _TeacherProfile_user(ctx context.Context, field grap
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_TeacherProfile_user(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -8868,7 +8868,7 @@ func (ec *executionContext) _TeacherProfile_subjects(ctx context.Context, field 
 	}
 	res := resTmp.([]*model.Subject)
 	fc.Result = res
-	return ec.marshalNSubject2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubjectᚄ(ctx, field.Selections, res)
+	return ec.marshalNSubject2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubjectᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_TeacherProfile_subjects(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -9223,7 +9223,7 @@ func (ec *executionContext) _Unit_course(ctx context.Context, field graphql.Coll
 	}
 	res := resTmp.(*model.Course)
 	fc.Result = res
-	return ec.marshalNCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCourse(ctx, field.Selections, res)
+	return ec.marshalNCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCourse(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Unit_course(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -9413,7 +9413,7 @@ func (ec *executionContext) _User_role(ctx context.Context, field graphql.Collec
 	}
 	res := resTmp.(model.Role)
 	fc.Result = res
-	return ec.marshalNRole2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRole(ctx, field.Selections, res)
+	return ec.marshalNRole2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRole(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_User_role(_ context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -11880,7 +11880,7 @@ func (ec *executionContext) unmarshalInputCreateLessonInput(ctx context.Context,
 			it.Order = data
 		case "difficulty":
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("difficulty"))
-			data, err := ec.unmarshalODifficulty2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐDifficulty(ctx, v)
+			data, err := ec.unmarshalODifficulty2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐDifficulty(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -12132,7 +12132,7 @@ func (ec *executionContext) unmarshalInputQuestionInput(ctx context.Context, obj
 			it.Prompt = data
 		case "options":
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("options"))
-			data, err := ec.unmarshalOOptionInput2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐOptionInputᚄ(ctx, v)
+			data, err := ec.unmarshalOOptionInput2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐOptionInputᚄ(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -12207,7 +12207,7 @@ func (ec *executionContext) unmarshalInputSignUpInput(ctx context.Context, obj a
 		switch k {
 		case "role":
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("role"))
-			data, err := ec.unmarshalNRole2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRole(ctx, v)
+			data, err := ec.unmarshalNRole2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRole(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -12269,7 +12269,7 @@ func (ec *executionContext) unmarshalInputSubmitQuizInput(ctx context.Context, o
 			it.QuizID = data
 		case "answers":
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("answers"))
-			data, err := ec.unmarshalNAnswerInput2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAnswerInputᚄ(ctx, v)
+			data, err := ec.unmarshalNAnswerInput2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAnswerInputᚄ(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -14434,14 +14434,14 @@ func (ec *executionContext) ___Type(ctx context.Context, sel ast.SelectionSet, o
 
 // region    ***************************** type.gotpl *****************************
 
-func (ec *executionContext) unmarshalNAnswerInput2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAnswerInputᚄ(ctx context.Context, v any) ([]*model.AnswerInput, error) {
+func (ec *executionContext) unmarshalNAnswerInput2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAnswerInputᚄ(ctx context.Context, v any) ([]*model.AnswerInput, error) {
 	var vSlice []any
 	vSlice = graphql.CoerceList(v)
 	var err error
 	res := make([]*model.AnswerInput, len(vSlice))
 	for i := range vSlice {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithIndex(i))
-		res[i], err = ec.unmarshalNAnswerInput2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAnswerInput(ctx, vSlice[i])
+		res[i], err = ec.unmarshalNAnswerInput2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAnswerInput(ctx, vSlice[i])
 		if err != nil {
 			return nil, err
 		}
@@ -14449,16 +14449,16 @@ func (ec *executionContext) unmarshalNAnswerInput2ᚕᚖgithubᚗcomᚋam4rknvl�
 	return res, nil
 }
 
-func (ec *executionContext) unmarshalNAnswerInput2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAnswerInput(ctx context.Context, v any) (*model.AnswerInput, error) {
+func (ec *executionContext) unmarshalNAnswerInput2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAnswerInput(ctx context.Context, v any) (*model.AnswerInput, error) {
 	res, err := ec.unmarshalInputAnswerInput(ctx, v)
 	return &res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNAttempt2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAttempt(ctx context.Context, sel ast.SelectionSet, v model.Attempt) graphql.Marshaler {
+func (ec *executionContext) marshalNAttempt2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAttempt(ctx context.Context, sel ast.SelectionSet, v model.Attempt) graphql.Marshaler {
 	return ec._Attempt(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNAttempt2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAttempt(ctx context.Context, sel ast.SelectionSet, v *model.Attempt) graphql.Marshaler {
+func (ec *executionContext) marshalNAttempt2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAttempt(ctx context.Context, sel ast.SelectionSet, v *model.Attempt) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -14468,7 +14468,7 @@ func (ec *executionContext) marshalNAttempt2ᚖgithubᚗcomᚋam4rknvlᚋedtech�
 	return ec._Attempt(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNAttemptAnswer2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAttemptAnswerᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.AttemptAnswer) graphql.Marshaler {
+func (ec *executionContext) marshalNAttemptAnswer2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAttemptAnswerᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.AttemptAnswer) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -14492,7 +14492,7 @@ func (ec *executionContext) marshalNAttemptAnswer2ᚕᚖgithubᚗcomᚋam4rknvl�
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNAttemptAnswer2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAttemptAnswer(ctx, sel, v[i])
+			ret[i] = ec.marshalNAttemptAnswer2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAttemptAnswer(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -14512,7 +14512,7 @@ func (ec *executionContext) marshalNAttemptAnswer2ᚕᚖgithubᚗcomᚋam4rknvl�
 	return ret
 }
 
-func (ec *executionContext) marshalNAttemptAnswer2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAttemptAnswer(ctx context.Context, sel ast.SelectionSet, v *model.AttemptAnswer) graphql.Marshaler {
+func (ec *executionContext) marshalNAttemptAnswer2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAttemptAnswer(ctx context.Context, sel ast.SelectionSet, v *model.AttemptAnswer) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -14522,11 +14522,11 @@ func (ec *executionContext) marshalNAttemptAnswer2ᚖgithubᚗcomᚋam4rknvlᚋe
 	return ec._AttemptAnswer(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNAudioBlock2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAudioBlock(ctx context.Context, sel ast.SelectionSet, v model.AudioBlock) graphql.Marshaler {
+func (ec *executionContext) marshalNAudioBlock2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAudioBlock(ctx context.Context, sel ast.SelectionSet, v model.AudioBlock) graphql.Marshaler {
 	return ec._AudioBlock(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNAudioBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAudioBlock(ctx context.Context, sel ast.SelectionSet, v *model.AudioBlock) graphql.Marshaler {
+func (ec *executionContext) marshalNAudioBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAudioBlock(ctx context.Context, sel ast.SelectionSet, v *model.AudioBlock) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -14536,16 +14536,16 @@ func (ec *executionContext) marshalNAudioBlock2ᚖgithubᚗcomᚋam4rknvlᚋedte
 	return ec._AudioBlock(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNAudioBlockInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAudioBlockInput(ctx context.Context, v any) (model.AudioBlockInput, error) {
+func (ec *executionContext) unmarshalNAudioBlockInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAudioBlockInput(ctx context.Context, v any) (model.AudioBlockInput, error) {
 	res, err := ec.unmarshalInputAudioBlockInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNAuthPayload2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAuthPayload(ctx context.Context, sel ast.SelectionSet, v model.AuthPayload) graphql.Marshaler {
+func (ec *executionContext) marshalNAuthPayload2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAuthPayload(ctx context.Context, sel ast.SelectionSet, v model.AuthPayload) graphql.Marshaler {
 	return ec._AuthPayload(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNAuthPayload2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐAuthPayload(ctx context.Context, sel ast.SelectionSet, v *model.AuthPayload) graphql.Marshaler {
+func (ec *executionContext) marshalNAuthPayload2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐAuthPayload(ctx context.Context, sel ast.SelectionSet, v *model.AuthPayload) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -14571,7 +14571,7 @@ func (ec *executionContext) marshalNBoolean2bool(ctx context.Context, sel ast.Se
 	return res
 }
 
-func (ec *executionContext) marshalNContentBlock2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐContentBlock(ctx context.Context, sel ast.SelectionSet, v model.ContentBlock) graphql.Marshaler {
+func (ec *executionContext) marshalNContentBlock2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐContentBlock(ctx context.Context, sel ast.SelectionSet, v model.ContentBlock) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -14581,7 +14581,7 @@ func (ec *executionContext) marshalNContentBlock2githubᚗcomᚋam4rknvlᚋedtec
 	return ec._ContentBlock(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNContentBlock2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐContentBlockᚄ(ctx context.Context, sel ast.SelectionSet, v []model.ContentBlock) graphql.Marshaler {
+func (ec *executionContext) marshalNContentBlock2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐContentBlockᚄ(ctx context.Context, sel ast.SelectionSet, v []model.ContentBlock) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -14605,7 +14605,7 @@ func (ec *executionContext) marshalNContentBlock2ᚕgithubᚗcomᚋam4rknvlᚋed
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNContentBlock2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐContentBlock(ctx, sel, v[i])
+			ret[i] = ec.marshalNContentBlock2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐContentBlock(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -14625,11 +14625,11 @@ func (ec *executionContext) marshalNContentBlock2ᚕgithubᚗcomᚋam4rknvlᚋed
 	return ret
 }
 
-func (ec *executionContext) marshalNCourse2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCourse(ctx context.Context, sel ast.SelectionSet, v model.Course) graphql.Marshaler {
+func (ec *executionContext) marshalNCourse2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCourse(ctx context.Context, sel ast.SelectionSet, v model.Course) graphql.Marshaler {
 	return ec._Course(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNCourse2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCourseᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Course) graphql.Marshaler {
+func (ec *executionContext) marshalNCourse2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCourseᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Course) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -14653,7 +14653,7 @@ func (ec *executionContext) marshalNCourse2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtec
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCourse(ctx, sel, v[i])
+			ret[i] = ec.marshalNCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCourse(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -14673,7 +14673,7 @@ func (ec *executionContext) marshalNCourse2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtec
 	return ret
 }
 
-func (ec *executionContext) marshalNCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCourse(ctx context.Context, sel ast.SelectionSet, v *model.Course) graphql.Marshaler {
+func (ec *executionContext) marshalNCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCourse(ctx context.Context, sel ast.SelectionSet, v *model.Course) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -14683,27 +14683,27 @@ func (ec *executionContext) marshalNCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtech�
 	return ec._Course(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNCreateCourseInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCreateCourseInput(ctx context.Context, v any) (model.CreateCourseInput, error) {
+func (ec *executionContext) unmarshalNCreateCourseInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCreateCourseInput(ctx context.Context, v any) (model.CreateCourseInput, error) {
 	res, err := ec.unmarshalInputCreateCourseInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalNCreateLessonInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCreateLessonInput(ctx context.Context, v any) (model.CreateLessonInput, error) {
+func (ec *executionContext) unmarshalNCreateLessonInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCreateLessonInput(ctx context.Context, v any) (model.CreateLessonInput, error) {
 	res, err := ec.unmarshalInputCreateLessonInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalNCreateStudentProfileInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCreateStudentProfileInput(ctx context.Context, v any) (model.CreateStudentProfileInput, error) {
+func (ec *executionContext) unmarshalNCreateStudentProfileInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCreateStudentProfileInput(ctx context.Context, v any) (model.CreateStudentProfileInput, error) {
 	res, err := ec.unmarshalInputCreateStudentProfileInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalNCreateUnitInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCreateUnitInput(ctx context.Context, v any) (model.CreateUnitInput, error) {
+func (ec *executionContext) unmarshalNCreateUnitInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCreateUnitInput(ctx context.Context, v any) (model.CreateUnitInput, error) {
 	res, err := ec.unmarshalInputCreateUnitInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalNCreateUploadUrlInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCreateUploadURLInput(ctx context.Context, v any) (model.CreateUploadURLInput, error) {
+func (ec *executionContext) unmarshalNCreateUploadUrlInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCreateUploadURLInput(ctx context.Context, v any) (model.CreateUploadURLInput, error) {
 	res, err := ec.unmarshalInputCreateUploadUrlInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
@@ -14724,11 +14724,11 @@ func (ec *executionContext) marshalNID2string(ctx context.Context, sel ast.Selec
 	return res
 }
 
-func (ec *executionContext) marshalNImageBlock2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐImageBlock(ctx context.Context, sel ast.SelectionSet, v model.ImageBlock) graphql.Marshaler {
+func (ec *executionContext) marshalNImageBlock2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐImageBlock(ctx context.Context, sel ast.SelectionSet, v model.ImageBlock) graphql.Marshaler {
 	return ec._ImageBlock(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNImageBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐImageBlock(ctx context.Context, sel ast.SelectionSet, v *model.ImageBlock) graphql.Marshaler {
+func (ec *executionContext) marshalNImageBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐImageBlock(ctx context.Context, sel ast.SelectionSet, v *model.ImageBlock) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -14738,7 +14738,7 @@ func (ec *executionContext) marshalNImageBlock2ᚖgithubᚗcomᚋam4rknvlᚋedte
 	return ec._ImageBlock(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNImageBlockInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐImageBlockInput(ctx context.Context, v any) (model.ImageBlockInput, error) {
+func (ec *executionContext) unmarshalNImageBlockInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐImageBlockInput(ctx context.Context, v any) (model.ImageBlockInput, error) {
 	res, err := ec.unmarshalInputImageBlockInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
@@ -14805,11 +14805,11 @@ func (ec *executionContext) marshalNJSON2string(ctx context.Context, sel ast.Sel
 	return res
 }
 
-func (ec *executionContext) marshalNLesson2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLesson(ctx context.Context, sel ast.SelectionSet, v model.Lesson) graphql.Marshaler {
+func (ec *executionContext) marshalNLesson2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLesson(ctx context.Context, sel ast.SelectionSet, v model.Lesson) graphql.Marshaler {
 	return ec._Lesson(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNLesson2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLessonᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Lesson) graphql.Marshaler {
+func (ec *executionContext) marshalNLesson2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLessonᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Lesson) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -14833,7 +14833,7 @@ func (ec *executionContext) marshalNLesson2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtec
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLesson(ctx, sel, v[i])
+			ret[i] = ec.marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLesson(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -14853,7 +14853,7 @@ func (ec *executionContext) marshalNLesson2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtec
 	return ret
 }
 
-func (ec *executionContext) marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLesson(ctx context.Context, sel ast.SelectionSet, v *model.Lesson) graphql.Marshaler {
+func (ec *executionContext) marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLesson(ctx context.Context, sel ast.SelectionSet, v *model.Lesson) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -14863,12 +14863,12 @@ func (ec *executionContext) marshalNLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtech�
 	return ec._Lesson(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNLinkChildInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLinkChildInput(ctx context.Context, v any) (model.LinkChildInput, error) {
+func (ec *executionContext) unmarshalNLinkChildInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLinkChildInput(ctx context.Context, v any) (model.LinkChildInput, error) {
 	res, err := ec.unmarshalInputLinkChildInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNOption2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐOption(ctx context.Context, sel ast.SelectionSet, v *model.Option) graphql.Marshaler {
+func (ec *executionContext) marshalNOption2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐOption(ctx context.Context, sel ast.SelectionSet, v *model.Option) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -14878,16 +14878,16 @@ func (ec *executionContext) marshalNOption2ᚖgithubᚗcomᚋam4rknvlᚋedtech�
 	return ec._Option(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNOptionInput2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐOptionInput(ctx context.Context, v any) (*model.OptionInput, error) {
+func (ec *executionContext) unmarshalNOptionInput2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐOptionInput(ctx context.Context, v any) (*model.OptionInput, error) {
 	res, err := ec.unmarshalInputOptionInput(ctx, v)
 	return &res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNParentChild2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐParentChild(ctx context.Context, sel ast.SelectionSet, v model.ParentChild) graphql.Marshaler {
+func (ec *executionContext) marshalNParentChild2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐParentChild(ctx context.Context, sel ast.SelectionSet, v model.ParentChild) graphql.Marshaler {
 	return ec._ParentChild(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNParentChild2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐParentChild(ctx context.Context, sel ast.SelectionSet, v *model.ParentChild) graphql.Marshaler {
+func (ec *executionContext) marshalNParentChild2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐParentChild(ctx context.Context, sel ast.SelectionSet, v *model.ParentChild) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -14897,11 +14897,11 @@ func (ec *executionContext) marshalNParentChild2ᚖgithubᚗcomᚋam4rknvlᚋedt
 	return ec._ParentChild(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNProgress2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgress(ctx context.Context, sel ast.SelectionSet, v model.Progress) graphql.Marshaler {
+func (ec *executionContext) marshalNProgress2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgress(ctx context.Context, sel ast.SelectionSet, v model.Progress) graphql.Marshaler {
 	return ec._Progress(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNProgress2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgressᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Progress) graphql.Marshaler {
+func (ec *executionContext) marshalNProgress2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgressᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Progress) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -14925,7 +14925,7 @@ func (ec *executionContext) marshalNProgress2ᚕᚖgithubᚗcomᚋam4rknvlᚋedt
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgress(ctx, sel, v[i])
+			ret[i] = ec.marshalNProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgress(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -14945,7 +14945,7 @@ func (ec *executionContext) marshalNProgress2ᚕᚖgithubᚗcomᚋam4rknvlᚋedt
 	return ret
 }
 
-func (ec *executionContext) marshalNProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgress(ctx context.Context, sel ast.SelectionSet, v *model.Progress) graphql.Marshaler {
+func (ec *executionContext) marshalNProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgress(ctx context.Context, sel ast.SelectionSet, v *model.Progress) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -14955,27 +14955,27 @@ func (ec *executionContext) marshalNProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtech
 	return ec._Progress(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNProgressStatus2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgressStatus(ctx context.Context, v any) (model.ProgressStatus, error) {
+func (ec *executionContext) unmarshalNProgressStatus2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgressStatus(ctx context.Context, v any) (model.ProgressStatus, error) {
 	var res model.ProgressStatus
 	err := res.UnmarshalGQL(v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNProgressStatus2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgressStatus(ctx context.Context, sel ast.SelectionSet, v model.ProgressStatus) graphql.Marshaler {
+func (ec *executionContext) marshalNProgressStatus2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgressStatus(ctx context.Context, sel ast.SelectionSet, v model.ProgressStatus) graphql.Marshaler {
 	return v
 }
 
-func (ec *executionContext) unmarshalNPublishState2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐPublishState(ctx context.Context, v any) (model.PublishState, error) {
+func (ec *executionContext) unmarshalNPublishState2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐPublishState(ctx context.Context, v any) (model.PublishState, error) {
 	var res model.PublishState
 	err := res.UnmarshalGQL(v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNPublishState2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐPublishState(ctx context.Context, sel ast.SelectionSet, v model.PublishState) graphql.Marshaler {
+func (ec *executionContext) marshalNPublishState2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐPublishState(ctx context.Context, sel ast.SelectionSet, v model.PublishState) graphql.Marshaler {
 	return v
 }
 
-func (ec *executionContext) marshalNQuestion2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuestionᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Question) graphql.Marshaler {
+func (ec *executionContext) marshalNQuestion2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuestionᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Question) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -14999,7 +14999,7 @@ func (ec *executionContext) marshalNQuestion2ᚕᚖgithubᚗcomᚋam4rknvlᚋedt
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNQuestion2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuestion(ctx, sel, v[i])
+			ret[i] = ec.marshalNQuestion2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuestion(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -15019,7 +15019,7 @@ func (ec *executionContext) marshalNQuestion2ᚕᚖgithubᚗcomᚋam4rknvlᚋedt
 	return ret
 }
 
-func (ec *executionContext) marshalNQuestion2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuestion(ctx context.Context, sel ast.SelectionSet, v *model.Question) graphql.Marshaler {
+func (ec *executionContext) marshalNQuestion2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuestion(ctx context.Context, sel ast.SelectionSet, v *model.Question) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -15029,14 +15029,14 @@ func (ec *executionContext) marshalNQuestion2ᚖgithubᚗcomᚋam4rknvlᚋedtech
 	return ec._Question(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNQuestionInput2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuestionInputᚄ(ctx context.Context, v any) ([]*model.QuestionInput, error) {
+func (ec *executionContext) unmarshalNQuestionInput2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuestionInputᚄ(ctx context.Context, v any) ([]*model.QuestionInput, error) {
 	var vSlice []any
 	vSlice = graphql.CoerceList(v)
 	var err error
 	res := make([]*model.QuestionInput, len(vSlice))
 	for i := range vSlice {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithIndex(i))
-		res[i], err = ec.unmarshalNQuestionInput2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuestionInput(ctx, vSlice[i])
+		res[i], err = ec.unmarshalNQuestionInput2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuestionInput(ctx, vSlice[i])
 		if err != nil {
 			return nil, err
 		}
@@ -15044,16 +15044,16 @@ func (ec *executionContext) unmarshalNQuestionInput2ᚕᚖgithubᚗcomᚋam4rknv
 	return res, nil
 }
 
-func (ec *executionContext) unmarshalNQuestionInput2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuestionInput(ctx context.Context, v any) (*model.QuestionInput, error) {
+func (ec *executionContext) unmarshalNQuestionInput2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuestionInput(ctx context.Context, v any) (*model.QuestionInput, error) {
 	res, err := ec.unmarshalInputQuestionInput(ctx, v)
 	return &res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNQuiz2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuiz(ctx context.Context, sel ast.SelectionSet, v model.Quiz) graphql.Marshaler {
+func (ec *executionContext) marshalNQuiz2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuiz(ctx context.Context, sel ast.SelectionSet, v model.Quiz) graphql.Marshaler {
 	return ec._Quiz(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuiz(ctx context.Context, sel ast.SelectionSet, v *model.Quiz) graphql.Marshaler {
+func (ec *executionContext) marshalNQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuiz(ctx context.Context, sel ast.SelectionSet, v *model.Quiz) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -15063,22 +15063,22 @@ func (ec *executionContext) marshalNQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋg
 	return ec._Quiz(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNRole2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRole(ctx context.Context, v any) (model.Role, error) {
+func (ec *executionContext) unmarshalNRole2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRole(ctx context.Context, v any) (model.Role, error) {
 	var res model.Role
 	err := res.UnmarshalGQL(v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNRole2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRole(ctx context.Context, sel ast.SelectionSet, v model.Role) graphql.Marshaler {
+func (ec *executionContext) marshalNRole2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRole(ctx context.Context, sel ast.SelectionSet, v model.Role) graphql.Marshaler {
 	return v
 }
 
-func (ec *executionContext) unmarshalNSignInInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSignInInput(ctx context.Context, v any) (model.SignInInput, error) {
+func (ec *executionContext) unmarshalNSignInInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSignInInput(ctx context.Context, v any) (model.SignInInput, error) {
 	res, err := ec.unmarshalInputSignInInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalNSignUpInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSignUpInput(ctx context.Context, v any) (model.SignUpInput, error) {
+func (ec *executionContext) unmarshalNSignUpInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSignUpInput(ctx context.Context, v any) (model.SignUpInput, error) {
 	res, err := ec.unmarshalInputSignUpInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
@@ -15099,11 +15099,11 @@ func (ec *executionContext) marshalNString2string(ctx context.Context, sel ast.S
 	return res
 }
 
-func (ec *executionContext) marshalNStudentProfile2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐStudentProfile(ctx context.Context, sel ast.SelectionSet, v model.StudentProfile) graphql.Marshaler {
+func (ec *executionContext) marshalNStudentProfile2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐStudentProfile(ctx context.Context, sel ast.SelectionSet, v model.StudentProfile) graphql.Marshaler {
 	return ec._StudentProfile(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNStudentProfile2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐStudentProfile(ctx context.Context, sel ast.SelectionSet, v *model.StudentProfile) graphql.Marshaler {
+func (ec *executionContext) marshalNStudentProfile2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐStudentProfile(ctx context.Context, sel ast.SelectionSet, v *model.StudentProfile) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -15113,7 +15113,7 @@ func (ec *executionContext) marshalNStudentProfile2ᚖgithubᚗcomᚋam4rknvlᚋ
 	return ec._StudentProfile(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNSubject2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubjectᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Subject) graphql.Marshaler {
+func (ec *executionContext) marshalNSubject2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubjectᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Subject) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -15137,7 +15137,7 @@ func (ec *executionContext) marshalNSubject2ᚕᚖgithubᚗcomᚋam4rknvlᚋedte
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNSubject2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubject(ctx, sel, v[i])
+			ret[i] = ec.marshalNSubject2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubject(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -15157,7 +15157,7 @@ func (ec *executionContext) marshalNSubject2ᚕᚖgithubᚗcomᚋam4rknvlᚋedte
 	return ret
 }
 
-func (ec *executionContext) marshalNSubject2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubject(ctx context.Context, sel ast.SelectionSet, v *model.Subject) graphql.Marshaler {
+func (ec *executionContext) marshalNSubject2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubject(ctx context.Context, sel ast.SelectionSet, v *model.Subject) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -15167,11 +15167,11 @@ func (ec *executionContext) marshalNSubject2ᚖgithubᚗcomᚋam4rknvlᚋedtech�
 	return ec._Subject(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNSubmission2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubmission(ctx context.Context, sel ast.SelectionSet, v model.Submission) graphql.Marshaler {
+func (ec *executionContext) marshalNSubmission2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubmission(ctx context.Context, sel ast.SelectionSet, v model.Submission) graphql.Marshaler {
 	return ec._Submission(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNSubmission2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubmissionᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Submission) graphql.Marshaler {
+func (ec *executionContext) marshalNSubmission2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubmissionᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Submission) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -15195,7 +15195,7 @@ func (ec *executionContext) marshalNSubmission2ᚕᚖgithubᚗcomᚋam4rknvlᚋe
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNSubmission2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubmission(ctx, sel, v[i])
+			ret[i] = ec.marshalNSubmission2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubmission(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -15215,7 +15215,7 @@ func (ec *executionContext) marshalNSubmission2ᚕᚖgithubᚗcomᚋam4rknvlᚋe
 	return ret
 }
 
-func (ec *executionContext) marshalNSubmission2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubmission(ctx context.Context, sel ast.SelectionSet, v *model.Submission) graphql.Marshaler {
+func (ec *executionContext) marshalNSubmission2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubmission(ctx context.Context, sel ast.SelectionSet, v *model.Submission) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -15225,16 +15225,16 @@ func (ec *executionContext) marshalNSubmission2ᚖgithubᚗcomᚋam4rknvlᚋedte
 	return ec._Submission(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNSubmitQuizInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐSubmitQuizInput(ctx context.Context, v any) (model.SubmitQuizInput, error) {
+func (ec *executionContext) unmarshalNSubmitQuizInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐSubmitQuizInput(ctx context.Context, v any) (model.SubmitQuizInput, error) {
 	res, err := ec.unmarshalInputSubmitQuizInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNTextBlock2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐTextBlock(ctx context.Context, sel ast.SelectionSet, v model.TextBlock) graphql.Marshaler {
+func (ec *executionContext) marshalNTextBlock2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐTextBlock(ctx context.Context, sel ast.SelectionSet, v model.TextBlock) graphql.Marshaler {
 	return ec._TextBlock(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNTextBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐTextBlock(ctx context.Context, sel ast.SelectionSet, v *model.TextBlock) graphql.Marshaler {
+func (ec *executionContext) marshalNTextBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐTextBlock(ctx context.Context, sel ast.SelectionSet, v *model.TextBlock) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -15244,7 +15244,7 @@ func (ec *executionContext) marshalNTextBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtec
 	return ec._TextBlock(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNTextBlockInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐTextBlockInput(ctx context.Context, v any) (model.TextBlockInput, error) {
+func (ec *executionContext) unmarshalNTextBlockInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐTextBlockInput(ctx context.Context, v any) (model.TextBlockInput, error) {
 	res, err := ec.unmarshalInputTextBlockInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
@@ -15265,11 +15265,11 @@ func (ec *executionContext) marshalNTime2timeᚐTime(ctx context.Context, sel as
 	return res
 }
 
-func (ec *executionContext) marshalNUnit2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUnit(ctx context.Context, sel ast.SelectionSet, v model.Unit) graphql.Marshaler {
+func (ec *executionContext) marshalNUnit2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUnit(ctx context.Context, sel ast.SelectionSet, v model.Unit) graphql.Marshaler {
 	return ec._Unit(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNUnit2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUnitᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Unit) graphql.Marshaler {
+func (ec *executionContext) marshalNUnit2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUnitᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Unit) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -15293,7 +15293,7 @@ func (ec *executionContext) marshalNUnit2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech�
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNUnit2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUnit(ctx, sel, v[i])
+			ret[i] = ec.marshalNUnit2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUnit(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -15313,7 +15313,7 @@ func (ec *executionContext) marshalNUnit2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech�
 	return ret
 }
 
-func (ec *executionContext) marshalNUnit2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUnit(ctx context.Context, sel ast.SelectionSet, v *model.Unit) graphql.Marshaler {
+func (ec *executionContext) marshalNUnit2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUnit(ctx context.Context, sel ast.SelectionSet, v *model.Unit) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -15323,7 +15323,7 @@ func (ec *executionContext) marshalNUnit2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋg
 	return ec._Unit(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v *model.User) graphql.Marshaler {
+func (ec *executionContext) marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v *model.User) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -15333,11 +15333,11 @@ func (ec *executionContext) marshalNUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋg
 	return ec._User(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNVideoBlock2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐVideoBlock(ctx context.Context, sel ast.SelectionSet, v model.VideoBlock) graphql.Marshaler {
+func (ec *executionContext) marshalNVideoBlock2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐVideoBlock(ctx context.Context, sel ast.SelectionSet, v model.VideoBlock) graphql.Marshaler {
 	return ec._VideoBlock(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNVideoBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐVideoBlock(ctx context.Context, sel ast.SelectionSet, v *model.VideoBlock) graphql.Marshaler {
+func (ec *executionContext) marshalNVideoBlock2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐVideoBlock(ctx context.Context, sel ast.SelectionSet, v *model.VideoBlock) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -15347,7 +15347,7 @@ func (ec *executionContext) marshalNVideoBlock2ᚖgithubᚗcomᚋam4rknvlᚋedte
 	return ec._VideoBlock(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNVideoBlockInput2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐVideoBlockInput(ctx context.Context, v any) (model.VideoBlockInput, error) {
+func (ec *executionContext) unmarshalNVideoBlockInput2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐVideoBlockInput(ctx context.Context, v any) (model.VideoBlockInput, error) {
 	res, err := ec.unmarshalInputVideoBlockInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
@@ -15635,14 +15635,14 @@ func (ec *executionContext) marshalOBoolean2ᚖbool(ctx context.Context, sel ast
 	return res
 }
 
-func (ec *executionContext) marshalOCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐCourse(ctx context.Context, sel ast.SelectionSet, v *model.Course) graphql.Marshaler {
+func (ec *executionContext) marshalOCourse2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐCourse(ctx context.Context, sel ast.SelectionSet, v *model.Course) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return ec._Course(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalODifficulty2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐDifficulty(ctx context.Context, v any) (*model.Difficulty, error) {
+func (ec *executionContext) unmarshalODifficulty2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐDifficulty(ctx context.Context, v any) (*model.Difficulty, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -15651,7 +15651,7 @@ func (ec *executionContext) unmarshalODifficulty2ᚖgithubᚗcomᚋam4rknvlᚋed
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalODifficulty2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐDifficulty(ctx context.Context, sel ast.SelectionSet, v *model.Difficulty) graphql.Marshaler {
+func (ec *executionContext) marshalODifficulty2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐDifficulty(ctx context.Context, sel ast.SelectionSet, v *model.Difficulty) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -15712,14 +15712,14 @@ func (ec *executionContext) marshalOJSON2ᚖstring(ctx context.Context, sel ast.
 	return res
 }
 
-func (ec *executionContext) marshalOLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐLesson(ctx context.Context, sel ast.SelectionSet, v *model.Lesson) graphql.Marshaler {
+func (ec *executionContext) marshalOLesson2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐLesson(ctx context.Context, sel ast.SelectionSet, v *model.Lesson) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return ec._Lesson(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalOOption2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐOptionᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Option) graphql.Marshaler {
+func (ec *executionContext) marshalOOption2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐOptionᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Option) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -15746,7 +15746,7 @@ func (ec *executionContext) marshalOOption2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtec
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNOption2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐOption(ctx, sel, v[i])
+			ret[i] = ec.marshalNOption2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐOption(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -15766,7 +15766,7 @@ func (ec *executionContext) marshalOOption2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtec
 	return ret
 }
 
-func (ec *executionContext) unmarshalOOptionInput2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐOptionInputᚄ(ctx context.Context, v any) ([]*model.OptionInput, error) {
+func (ec *executionContext) unmarshalOOptionInput2ᚕᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐOptionInputᚄ(ctx context.Context, v any) ([]*model.OptionInput, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -15776,7 +15776,7 @@ func (ec *executionContext) unmarshalOOptionInput2ᚕᚖgithubᚗcomᚋam4rknvl�
 	res := make([]*model.OptionInput, len(vSlice))
 	for i := range vSlice {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithIndex(i))
-		res[i], err = ec.unmarshalNOptionInput2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐOptionInput(ctx, vSlice[i])
+		res[i], err = ec.unmarshalNOptionInput2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐOptionInput(ctx, vSlice[i])
 		if err != nil {
 			return nil, err
 		}
@@ -15784,14 +15784,14 @@ func (ec *executionContext) unmarshalOOptionInput2ᚕᚖgithubᚗcomᚋam4rknvl�
 	return res, nil
 }
 
-func (ec *executionContext) marshalOProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐProgress(ctx context.Context, sel ast.SelectionSet, v *model.Progress) graphql.Marshaler {
+func (ec *executionContext) marshalOProgress2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐProgress(ctx context.Context, sel ast.SelectionSet, v *model.Progress) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return ec._Progress(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalOPublishState2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐPublishState(ctx context.Context, v any) (*model.PublishState, error) {
+func (ec *executionContext) unmarshalOPublishState2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐPublishState(ctx context.Context, v any) (*model.PublishState, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -15800,21 +15800,21 @@ func (ec *executionContext) unmarshalOPublishState2ᚖgithubᚗcomᚋam4rknvlᚋ
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalOPublishState2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐPublishState(ctx context.Context, sel ast.SelectionSet, v *model.PublishState) graphql.Marshaler {
+func (ec *executionContext) marshalOPublishState2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐPublishState(ctx context.Context, sel ast.SelectionSet, v *model.PublishState) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return v
 }
 
-func (ec *executionContext) marshalOQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐQuiz(ctx context.Context, sel ast.SelectionSet, v *model.Quiz) graphql.Marshaler {
+func (ec *executionContext) marshalOQuiz2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐQuiz(ctx context.Context, sel ast.SelectionSet, v *model.Quiz) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return ec._Quiz(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx context.Context, v any) ([]model.Role, error) {
+func (ec *executionContext) unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx context.Context, v any) ([]model.Role, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -15824,7 +15824,7 @@ func (ec *executionContext) unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech�
 	res := make([]model.Role, len(vSlice))
 	for i := range vSlice {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithIndex(i))
-		res[i], err = ec.unmarshalNRole2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRole(ctx, vSlice[i])
+		res[i], err = ec.unmarshalNRole2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRole(ctx, vSlice[i])
 		if err != nil {
 			return nil, err
 		}
@@ -15832,7 +15832,7 @@ func (ec *executionContext) unmarshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech�
 	return res, nil
 }
 
-func (ec *executionContext) marshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRoleᚄ(ctx context.Context, sel ast.SelectionSet, v []model.Role) graphql.Marshaler {
+func (ec *executionContext) marshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRoleᚄ(ctx context.Context, sel ast.SelectionSet, v []model.Role) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -15859,7 +15859,7 @@ func (ec *executionContext) marshalORole2ᚕgithubᚗcomᚋam4rknvlᚋedtechᚋg
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNRole2githubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐRole(ctx, sel, v[i])
+			ret[i] = ec.marshalNRole2githubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐRole(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -15915,7 +15915,7 @@ func (ec *executionContext) marshalOTime2ᚖtimeᚐTime(ctx context.Context, sel
 	return res
 }
 
-func (ec *executionContext) marshalOUser2ᚖgithubᚗcomᚋam4rknvlᚋedtechᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v *model.User) graphql.Marshaler {
+func (ec *executionContext) marshalOUser2ᚖgithubᚗcomᚋam4rknvlᚋedtech_projectᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v *model.User) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
