@@ -7,7 +7,6 @@ import (
 	"fmt"
 	"io"
 	"strconv"
-	"time"
 )
 
 type ContentBlock interface {
@@ -26,9 +25,9 @@ type Attempt struct {
 	ID          string           `json:"id"`
 	User        *User            `json:"user"`
 	Quiz        *Quiz            `json:"quiz"`
-	Score       int              `json:"score"`
-	StartedAt   time.Time        `json:"startedAt"`
-	SubmittedAt *time.Time       `json:"submittedAt,omitempty"`
+	Score       *int             `json:"score,omitempty"`
+	StartedAt   *string          `json:"startedAt,omitempty"`
+	SubmittedAt *string          `json:"submittedAt,omitempty"`
 	Answers     []*AttemptAnswer `json:"answers"`
 }
 
@@ -56,18 +55,12 @@ type AudioBlockInput struct {
 	Order       *int   `json:"order,omitempty"`
 }
 
-type AuthPayload struct {
-	Token string `json:"token"`
-	User  *User  `json:"user"`
-}
-
 type Course struct {
-	ID        string       `json:"id"`
-	Subject   *Subject     `json:"subject"`
-	Grade     int          `json:"grade"`
-	Title     string       `json:"title"`
-	State     PublishState `json:"state"`
-	CreatedAt time.Time    `json:"createdAt"`
+	ID      string   `json:"id"`
+	Subject *Subject `json:"subject"`
+	Grade   int      `json:"grade"`
+	Title   string   `json:"title"`
+	Status  *string  `json:"status,omitempty"`
 }
 
 type CreateCourseInput struct {
@@ -122,15 +115,10 @@ type Lesson struct {
 	Title      string         `json:"title"`
 	Order      int            `json:"order"`
 	Difficulty *Difficulty    `json:"difficulty,omitempty"`
-	State      PublishState   `json:"state"`
+	Status     *string        `json:"status,omitempty"`
 	Version    int            `json:"version"`
 	Content    []ContentBlock `json:"content"`
 	Quiz       *Quiz          `json:"quiz,omitempty"`
-	CreatedAt  time.Time      `json:"createdAt"`
-}
-
-type LinkChildInput struct {
-	ChildUserID string `json:"childUserId"`
 }
 
 type Mutation struct {
@@ -147,20 +135,13 @@ type OptionInput struct {
 	IsCorrect bool   `json:"isCorrect"`
 }
 
-type ParentChild struct {
-	ID        string    `json:"id"`
-	Parent    *User     `json:"parent"`
-	Child     *User     `json:"child"`
-	CreatedAt time.Time `json:"createdAt"`
-}
-
 type Progress struct {
-	ID         string         `json:"id"`
-	User       *User          `json:"user"`
-	Lesson     *Lesson        `json:"lesson"`
-	Status     ProgressStatus `json:"status"`
-	BestScore  *int           `json:"bestScore,omitempty"`
-	LastSeenAt *time.Time     `json:"lastSeenAt,omitempty"`
+	ID         string          `json:"id"`
+	User       *User           `json:"user"`
+	Lesson     *Lesson         `json:"lesson"`
+	Status     *ProgressStatus `json:"status,omitempty"`
+	BestScore  *int            `json:"bestScore,omitempty"`
+	LastSeenAt *string         `json:"lastSeenAt,omitempty"`
 }
 
 type Query struct {
@@ -195,13 +176,6 @@ func (QuizBlock) IsContentBlock()    {}
 func (this QuizBlock) GetID() string { return this.ID }
 func (this QuizBlock) GetOrder() int { return this.Order }
 
-type SignInInput struct {
-	Email    *string `json:"email,omitempty"`
-	Phone    *string `json:"phone,omitempty"`
-	Otp      *string `json:"otp,omitempty"`
-	Password *string `json:"password,omitempty"`
-}
-
 type SignUpInput struct {
 	Role        Role    `json:"role"`
 	Email       *string `json:"email,omitempty"`
@@ -211,12 +185,11 @@ type SignUpInput struct {
 }
 
 type StudentProfile struct {
-	ID        string    `json:"id"`
-	User      *User     `json:"user"`
-	Grade     int       `json:"grade"`
-	Age       *int      `json:"age,omitempty"`
-	Prefs     *string   `json:"prefs,omitempty"`
-	CreatedAt time.Time `json:"createdAt"`
+	ID          string  `json:"id"`
+	User        *User   `json:"user"`
+	Grade       int     `json:"grade"`
+	Age         *int    `json:"age,omitempty"`
+	Preferences *string `json:"preferences,omitempty"`
 }
 
 type Subject struct {
@@ -225,13 +198,11 @@ type Subject struct {
 }
 
 type Submission struct {
-	ID        string       `json:"id"`
-	Lesson    *Lesson      `json:"lesson"`
-	Author    *User        `json:"author"`
-	Reviewer  *User        `json:"reviewer,omitempty"`
-	Notes     *string      `json:"notes,omitempty"`
-	State     PublishState `json:"state"`
-	UpdatedAt time.Time    `json:"updatedAt"`
+	ID          string  `json:"id"`
+	Lesson      *Lesson `json:"lesson"`
+	State       string  `json:"state"`
+	SubmittedBy *User   `json:"submittedBy,omitempty"`
+	SubmittedAt *string `json:"submittedAt,omitempty"`
 }
 
 type SubmitQuizInput struct {
@@ -239,16 +210,12 @@ type SubmitQuizInput struct {
 	Answers []*AnswerInput `json:"answers"`
 }
 
-type Subscription struct {
-}
-
 type TeacherProfile struct {
-	ID        string     `json:"id"`
-	User      *User      `json:"user"`
-	Subjects  []*Subject `json:"subjects"`
-	Grades    []int      `json:"grades"`
-	Bio       *string    `json:"bio,omitempty"`
-	CreatedAt time.Time  `json:"createdAt"`
+	ID       string     `json:"id"`
+	User     *User      `json:"user"`
+	Subjects []*Subject `json:"subjects"`
+	Grades   []int      `json:"grades"`
+	Bio      *string    `json:"bio,omitempty"`
 }
 
 type TextBlock struct {
@@ -273,14 +240,12 @@ type Unit struct {
 	Order  int     `json:"order"`
 }
 
-// Authenticated account. For STUDENT children accounts, link via ParentChild.
 type User struct {
-	ID          string    `json:"id"`
-	Role        Role      `json:"role"`
-	Email       *string   `json:"email,omitempty"`
-	Phone       *string   `json:"phone,omitempty"`
-	DisplayName *string   `json:"displayName,omitempty"`
-	CreatedAt   time.Time `json:"createdAt"`
+	ID          string  `json:"id"`
+	Role        Role    `json:"role"`
+	Email       *string `json:"email,omitempty"`
+	Phone       *string `json:"phone,omitempty"`
+	DisplayName *string `json:"displayName,omitempty"`
 }
 
 type VideoBlock struct {
@@ -303,20 +268,20 @@ type VideoBlockInput struct {
 type Difficulty string
 
 const (
-	DifficultyBeginner     Difficulty = "BEGINNER"
-	DifficultyIntermediate Difficulty = "INTERMEDIATE"
-	DifficultyAdvanced     Difficulty = "ADVANCED"
+	DifficultyEasy   Difficulty = "EASY"
+	DifficultyMedium Difficulty = "MEDIUM"
+	DifficultyHard   Difficulty = "HARD"
 )
 
 var AllDifficulty = []Difficulty{
-	DifficultyBeginner,
-	DifficultyIntermediate,
-	DifficultyAdvanced,
+	DifficultyEasy,
+	DifficultyMedium,
+	DifficultyHard,
 }
 
 func (e Difficulty) IsValid() bool {
 	switch e {
-	case DifficultyBeginner, DifficultyIntermediate, DifficultyAdvanced:
+	case DifficultyEasy, DifficultyMedium, DifficultyHard:
 		return true
 	}
 	return false
@@ -414,86 +379,23 @@ func (e ProgressStatus) MarshalJSON() ([]byte, error) {
 	return buf.Bytes(), nil
 }
 
-type PublishState string
-
-const (
-	PublishStateDraft            PublishState = "DRAFT"
-	PublishStateInReview         PublishState = "IN_REVIEW"
-	PublishStateChangesRequested PublishState = "CHANGES_REQUESTED"
-	PublishStatePublished        PublishState = "PUBLISHED"
-	PublishStateArchived         PublishState = "ARCHIVED"
-)
-
-var AllPublishState = []PublishState{
-	PublishStateDraft,
-	PublishStateInReview,
-	PublishStateChangesRequested,
-	PublishStatePublished,
-	PublishStateArchived,
-}
-
-func (e PublishState) IsValid() bool {
-	switch e {
-	case PublishStateDraft, PublishStateInReview, PublishStateChangesRequested, PublishStatePublished, PublishStateArchived:
-		return true
-	}
-	return false
-}
-
-func (e PublishState) String() string {
-	return string(e)
-}
-
-func (e *PublishState) UnmarshalGQL(v any) error {
-	str, ok := v.(string)
-	if !ok {
-		return fmt.Errorf("enums must be strings")
-	}
-
-	*e = PublishState(str)
-	if !e.IsValid() {
-		return fmt.Errorf("%s is not a valid PublishState", str)
-	}
-	return nil
-}
-
-func (e PublishState) MarshalGQL(w io.Writer) {
-	fmt.Fprint(w, strconv.Quote(e.String()))
-}
-
-func (e *PublishState) UnmarshalJSON(b []byte) error {
-	s, err := strconv.Unquote(string(b))
-	if err != nil {
-		return err
-	}
-	return e.UnmarshalGQL(s)
-}
-
-func (e PublishState) MarshalJSON() ([]byte, error) {
-	var buf bytes.Buffer
-	e.MarshalGQL(&buf)
-	return buf.Bytes(), nil
-}
-
 type Role string
 
 const (
 	RoleStudent Role = "STUDENT"
-	RoleParent  Role = "PARENT"
 	RoleTeacher Role = "TEACHER"
 	RoleAdmin   Role = "ADMIN"
 )
 
 var AllRole = []Role{
 	RoleStudent,
-	RoleParent,
 	RoleTeacher,
 	RoleAdmin,
 }
 
 func (e Role) IsValid() bool {
 	switch e {
-	case RoleStudent, RoleParent, RoleTeacher, RoleAdmin:
+	case RoleStudent, RoleTeacher, RoleAdmin:
 		return true
 	}
 	return false
