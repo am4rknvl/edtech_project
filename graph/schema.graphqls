@@ -1,0 +1,250 @@
+# Amharic EdTech MVP — GraphQL Schema (v1)
+# Schema-first for gqlgen. Keep resolvers thin; use service layer.
+
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
+
+# ---------- Scalars & Directives ----------
+scalar JSON
+scalar Time
+
+directive @auth(roles: [Role!]) on FIELD_DEFINITION
+
+# ---------- Enums ----------
+enum Role { STUDENT PARENT TEACHER ADMIN }
+enum Difficulty { BEGINNER INTERMEDIATE ADVANCED }
+enum ProgressStatus { NOT_STARTED IN_PROGRESS COMPLETED }
+enum PublishState { DRAFT IN_REVIEW CHANGES_REQUESTED PUBLISHED ARCHIVED }
+
+# ---------- Core Identities ----------
+"Authenticated account. For STUDENT children accounts, link via ParentChild."
+type User {
+  id: ID!
+  role: Role!
+  email: String
+  phone: String
+  displayName: String
+  createdAt: Time!
+}
+
+type StudentProfile {
+  id: ID!
+  user: User!
+  grade: Int!
+  age: Int
+  prefs: JSON
+  createdAt: Time!
+}
+
+type TeacherProfile {
+  id: ID!
+  user: User!
+  subjects: [Subject!]!
+  grades: [Int!]!
+  bio: String
+  createdAt: Time!
+}
+
+type ParentChild {
+  id: ID!
+  parent: User!
+  child: User!
+  createdAt: Time!
+}
+
+# ---------- Curriculum ----------
+
+type Subject { id: ID! name: String! }
+
+type Course {
+  id: ID!
+  subject: Subject!
+  grade: Int!
+  title: String!
+  state: PublishState!
+  createdAt: Time!
+}
+
+type Unit {
+  id: ID!
+  course: Course!
+  title: String!
+  order: Int!
+}
+
+type Lesson {
+  id: ID!
+  unit: Unit!
+  title: String!
+  order: Int!
+  difficulty: Difficulty
+  state: PublishState!
+  version: Int!
+  content: [ContentBlock!]!
+  quiz: Quiz
+  createdAt: Time!
+}
+
+interface ContentBlock { id: ID! order: Int! }
+
+type TextBlock implements ContentBlock { id: ID! order: Int! text: String! }
+
+type ImageBlock implements ContentBlock { id: ID! order: Int! url: String! alt: String }
+
+type AudioBlock implements ContentBlock { id: ID! order: Int! url: String! durationSec: Int }
+
+type VideoBlock implements ContentBlock { id: ID! order: Int! url: String! durationSec: Int }
+
+type QuizBlock implements ContentBlock { id: ID! order: Int! quiz: Quiz! }
+
+# ---------- Assessment & Progress ----------
+
+type Quiz { id: ID! lessonId: ID! questions: [Question!]! }
+
+type Question {
+  id: ID!
+  type: String! # MCQ | TRUE_FALSE | SHORT_ANSWER (MVP: MCQ)
+  prompt: String!
+  options: [Option!]
+}
+
+type Option { id: ID! text: String! isCorrect: Boolean! }
+
+type Attempt {
+  id: ID!
+  user: User!
+  quiz: Quiz!
+  score: Int!
+  startedAt: Time!
+  submittedAt: Time
+  answers: [AttemptAnswer!]!
+}
+
+type AttemptAnswer {
+  id: ID!
+  question: Question!
+  selectedOptionId: ID
+  textAnswer: String
+}
+
+type Progress {
+  id: ID!
+  user: User!
+  lesson: Lesson!
+  status: ProgressStatus!
+  bestScore: Int
+  lastSeenAt: Time
+}
+
+# ---------- Review / Publishing Workflow ----------
+
+type Submission {
+  id: ID!
+  lesson: Lesson!
+  author: User!
+  reviewer: User
+  notes: String
+  state: PublishState!
+  updatedAt: Time!
+}
+
+# ---------- Queries ----------
+
+type Query {
+  # Auth/session
+  viewer: User @auth
+
+  # Catalog
+  subjects: [Subject!]!
+  courses(grade: Int, subjectId: ID, state: PublishState): [Course!]!
+  course(id: ID!): Course
+  units(courseId: ID!): [Unit!]!
+  lessons(unitId: ID!, state: PublishState = PUBLISHED): [Lesson!]!
+  lesson(id: ID!): Lesson
+
+  # Discovery & search
+  recommendedLessons(grade: Int!): [Lesson!]!
+  searchLessons(q: String!, grade: Int): [Lesson!]!
+
+  # Progress
+  myProgress(courseId: ID): [Progress!]! @auth(roles: [STUDENT])
+  progressByLesson(lessonId: ID!, userId: ID): Progress @auth
+
+  # Creator dashboards
+  myDraftLessons: [Lesson!]! @auth(roles: [TEACHER, ADMIN])
+  submissions(state: PublishState): [Submission!]! @auth(roles: [ADMIN, TEACHER])
+
+  # Parent view
+  childProgress(childUserId: ID!): [Progress!]! @auth(roles: [PARENT, ADMIN])
+}
+
+# ---------- Mutations ----------
+
+input SignUpInput { role: Role! email: String phone: String displayName: String password: String }
+input SignInInput { email: String, phone: String, otp: String, password: String }
+
+input CreateStudentProfileInput { grade: Int!, age: Int }
+input LinkChildInput { childUserId: ID! }
+
+input CreateCourseInput { subjectId: ID!, grade: Int!, title: String! }
+input CreateUnitInput { courseId: ID!, title: String!, order: Int }
+input CreateLessonInput { unitId: ID!, title: String!, order: Int, difficulty: Difficulty }
+
+input TextBlockInput { text: String!, order: Int }
+input ImageBlockInput { url: String!, alt: String, order: Int }
+input AudioBlockInput { url: String!, durationSec: Int, order: Int }
+input VideoBlockInput { url: String!, durationSec: Int, order: Int }
+
+input QuestionInput { type: String!, prompt: String!, options: [OptionInput!] }
+input OptionInput { text: String!, isCorrect: Boolean! }
+
+input SubmitQuizInput { quizId: ID!, answers: [AnswerInput!]! }
+input AnswerInput { questionId: ID!, selectedOptionId: ID, textAnswer: String }
+
+input CreateUploadUrlInput { mime: String!, filename: String! }
+
+
+type AuthPayload { token: String! user: User! }
+
+ type Mutation {
+  # Auth
+  signUp(input: SignUpInput!): AuthPayload!
+  signIn(input: SignInInput!): AuthPayload!
+  createStudentProfile(input: CreateStudentProfileInput!): StudentProfile! @auth(roles: [STUDENT])
+  linkChild(input: LinkChildInput!): ParentChild! @auth(roles: [PARENT])
+
+  # Catalog (teacher/admin)
+  createCourse(input: CreateCourseInput!): Course! @auth(roles: [TEACHER, ADMIN])
+  createUnit(input: CreateUnitInput!): Unit! @auth(roles: [TEACHER, ADMIN])
+  createLesson(input: CreateLessonInput!): Lesson! @auth(roles: [TEACHER, ADMIN])
+
+  addTextBlock(lessonId: ID!, input: TextBlockInput!): TextBlock! @auth(roles: [TEACHER, ADMIN])
+  addImageBlock(lessonId: ID!, input: ImageBlockInput!): ImageBlock! @auth(roles: [TEACHER, ADMIN])
+  addAudioBlock(lessonId: ID!, input: AudioBlockInput!): AudioBlock! @auth(roles: [TEACHER, ADMIN])
+  addVideoBlock(lessonId: ID!, input: VideoBlockInput!): VideoBlock! @auth(roles: [TEACHER, ADMIN])
+
+  createQuiz(lessonId: ID!, questions: [QuestionInput!]!): Quiz! @auth(roles: [TEACHER, ADMIN])
+
+  submitForReview(lessonId: ID!): Submission! @auth(roles: [TEACHER, ADMIN])
+  approveSubmission(lessonId: ID!): Submission! @auth(roles: [ADMIN])
+  publishLesson(lessonId: ID!): Lesson! @auth(roles: [ADMIN])
+
+  # Learning flow
+  startLesson(lessonId: ID!): Progress! @auth(roles: [STUDENT])
+  completeLesson(lessonId: ID!, score: Int): Progress! @auth(roles: [STUDENT])
+  submitQuiz(input: SubmitQuizInput!): Attempt! @auth(roles: [STUDENT])
+
+  # Uploads (signed URL)
+  createUploadUrl(input: CreateUploadUrlInput!): JSON! @auth(roles: [TEACHER, ADMIN])
+}
+
+# ---------- Subscriptions ----------
+
+type Subscription {
+  progressUpdated(userId: ID!): Progress!
+  submissionStatusChanged(lessonId: ID!): Submission!
+  notificationReceived: JSON!
+}
